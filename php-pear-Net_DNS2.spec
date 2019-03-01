@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - PHP5 Resolver library used to communicate with a DNS server
 Name:		php-pear-Net_DNS2
-Version:	1.4.1
+Version:	1.4.4
 Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
-# Source0-md5:	389de177c93b53f24b4d706b90bdbf96
+# Source0-md5:	f2458d8ba7f718b7c0fc3d6bc0f42f69
 URL:		http://pear.php.net/package/Net_DNS2/
 BuildRequires:	php-packagexml2cl
 BuildRequires:	php-pear-PEAR
@@ -32,7 +32,6 @@ In PEAR status of this package is: %{status}.
 %pear_package_setup
 
 mv docs/%{pearname}/LICENSE .
-mv .%{php_pear_dir}/data/%{pearname}/README.md .
 
 %build
 packagexml2cl package.xml > ChangeLog
