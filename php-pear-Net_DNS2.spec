@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	Net_DNS2
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - PHP5 Resolver library used to communicate with a DNS server
 Name:		php-pear-Net_DNS2
 Version:	1.4.4
